@@ -1,11 +1,19 @@
-import AuroraEffect from "./components/auroraEffect";
+import StaggeredAnimation from "./components/staggeredAnimation";
+// import AuroraEffect from "./components/auroraEffect";
+// import TextAnimation from "./components/textAnimation"
+// import PopUpEffect from "./components/popUp"
 
 const App = () => {
   return (
     <div>
 
-      <AuroraEffect/>
+      {/* <AuroraEffect /> */}
 
+      <StaggeredAnimation />
+
+      {/* <TextAnimation /> */}
+      
+      {/* <PopUpEffect /> */}
     </div>
   )
 }
