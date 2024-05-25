@@ -7,3 +7,16 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #191d2b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #a855f7 30%, #f178b6 100%);
+    border-radius: 1rem;
+}
