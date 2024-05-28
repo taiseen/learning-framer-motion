@@ -1,5 +1,5 @@
 import StaggeredAnimation from "../components/staggeredAnimation";
-// import AnimationEffects from "../components/animationEffects";
+import AnimationEffects from "../components/animationEffects";
 import TextAnimation from "../components/textAnimation"
 import AuroraEffect from "../components/auroraEffect";
 import Example from "../components/examples/Example";
@@ -31,9 +31,9 @@ export const routes = [
         path: '/staggeredAnimation',
         component: StaggeredAnimation,
     },
-    // {
-    //     title: 'Animation Effects',
-    //     path: '/animationEffects',
-    //     component: AnimationEffects,
-    // },
+    {
+        title: 'Animation Effects',
+        path: '/animationEffects',
+        component: AnimationEffects,
+    },
 ]

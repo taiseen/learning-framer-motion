@@ -1,0 +1,12 @@
+
+const DummyContent = () => {
+    return (
+        <div>
+            <p className="mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae similique, nulla ut, dolore adipisci dicta consectetur deleniti sunt asperiores quo placeat sapiente! Cumque sapiente a rerum laboriosam dignissimos alias dolore? Vero quia adipisci dolorem dignissimos distinctio, assumenda voluptates accusantium beatae earum? Ullam sunt temporibus natus! Impedit sunt similique dicta amet cumque eaque. Enim at error sequi rerum possimus veritatis, qui sunt unde nemo fuga officiis eos! Iusto ab inventore asperiores a consequatur quae adipisci doloribus laborum quaerat facere sunt veniam atque cumque alias, quia magni architecto at magnam consectetur quisquam quod excepturi quas itaque! Tenetur necessitatibus mollitia est quae, laborum tempora culpa architecto? Veritatis, necessitatibus! Mollitia voluptatem maxime dolores accusamus iste deleniti et voluptate, reprehenderit, cupiditate quae quos. Numquam molestiae id sint, neque officiis mollitia necessitatibus animi quis itaque voluptas tenetur enim assumenda facere dignissimos natus beatae reprehenderit quo laboriosam minima vel cupiditate debitis. Quo nostrum consequatur fugiat voluptatem beatae!</p>
+
+            <p className="mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae similique, nulla ut, dolore adipisci dicta consectetur deleniti sunt asperiores quo placeat sapiente! Cumque sapiente a rerum laboriosam dignissimos alias dolore? Vero quia adipisci dolorem dignissimos distinctio, assumenda voluptates accusantium beatae earum? Ullam sunt temporibus natus! Impedit sunt similique dicta amet cumque eaque. Enim at error sequi rerum possimus veritatis, qui sunt unde nemo fuga officiis eos! Iusto ab inventore asperiores a consequatur quae adipisci doloribus laborum quaerat facere sunt veniam atque cumque alias, quia magni architecto at magnam consectetur quisquam quod excepturi quas itaque! Tenetur necessitatibus mollitia est quae, laborum tempora culpa architecto? Veritatis, necessitatibus! Mollitia voluptatem maxime dolores accusamus iste deleniti et voluptate, reprehenderit, cupiditate quae quos. Numquam molestiae id sint, neque officiis mollitia necessitatibus animi quis itaque voluptas tenetur enim assumenda facere dignissimos natus beatae reprehenderit quo laboriosam minima vel cupiditate debitis. Quo nostrum consequatur fugiat voluptatem beatae!</p>
+        </div>
+    )
+}
+
+export default DummyContent
