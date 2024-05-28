@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import BackBtn from "../BackBtn"
 
 const fadeInAnimation = {
     hidden: {
@@ -16,6 +17,7 @@ const fadeInAnimation = {
 const TextAnimation = () => {
     return (
         <div className="grid place-items-center h-screen bg-[#1a202c] text-white">
+            <BackBtn />
 
             <motion.div
                 variants={fadeInAnimation}

@@ -6,7 +6,7 @@ export default defineConfig({
 
   // for development mode
   server: {
-    port: 5000,
+    port: 9000,
     open: true, // open browser
   },
 

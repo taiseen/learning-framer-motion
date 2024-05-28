@@ -1,25 +1,24 @@
-// import StaggeredAnimation from "./components/staggeredAnimation";
-// import AnimationEffects from "./components/animationEffects"
-// import TextAnimation from "./components/textAnimation"
-// import AuroraEffect from "./components/auroraEffect";
-import PopUpEffect from "./components/popUp"
-
+import { BrowserRouter, Route, Routes, } from "react-router-dom";
+import { routes } from "./routes";
+import Home from "./components";
 
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
 
-      {/* <AuroraEffect /> */}
+      {/* <Home /> */}
 
-      {/* <StaggeredAnimation /> */}
+      <Routes>
+        <Route path='/' element={<Home />} />
 
-      {/* <TextAnimation /> */}
-      
-      <PopUpEffect />
-      
-      {/* <AnimationEffects /> */}
-    </div>
+        {
+          routes.map(obj =>
+            <Route key={obj.path} path={obj.path} element={<obj.component />} />
+          )
+        }
+      </Routes>
+    </BrowserRouter>
   )
 }
 
-export default App
+export default App;
