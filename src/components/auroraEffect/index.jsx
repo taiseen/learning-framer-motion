@@ -1,9 +1,12 @@
 import { motion, animate, useMotionTemplate, useMotionValue } from "framer-motion";
-import { useEffect } from "react";
+import { Suspense, lazy, useEffect } from "react";
 
-import ThreeJsCanvas from "./ThreeJsCanvas";
+import SuspenseLoading from "../../helper/SuspenseLoading";
 import BackBtn from "../BackBtn";
-import Content from "./Content";
+
+const ThreeJsCanvas = lazy(() => import('./ThreeJsCanvas'));
+const Content = lazy(() => import('./Content'));
+
 
 const colors = ['#DD335C', '#13FFAA', '#1E67C6', '#CE84CF'];
 
@@ -30,8 +33,9 @@ const AuroraEffect = () => {
     }, [color]);
 
     return (
-        <>
+        <Suspense fallback={SuspenseLoading}>
             <BackBtn />
+
             <motion.section
                 style={{ backgroundImage }}
                 className="relative min-h-screen grid place-content-center overflow-hidden bg-gray-950 px-4 py-24 text-gray-300"
@@ -42,7 +46,7 @@ const AuroraEffect = () => {
                 <ThreeJsCanvas />
 
             </motion.section>
-        </>
+        </Suspense>
     )
 }
 
