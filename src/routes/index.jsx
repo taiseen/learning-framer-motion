@@ -1,6 +1,7 @@
 import { lazy } from "react";
 
 
+const ModalOpeningAnimation = lazy(() => import('../components/modalOpeningAnimation'));
 const StaggeredAnimation = lazy(() => import('../components/staggeredAnimation'));
 const AnimationEffects = lazy(() => import('../components/animationEffects'));
 const TextAnimation = lazy(() => import('../components/textAnimation'));
@@ -9,7 +10,6 @@ const Example = lazy(() => import('../components/examples/Example'));
 const PopUpEffect = lazy(() => import('../components/popUp'));
 
 
-// const ModalOpeningAnimation = lazy(() => import('../components/modalOpeningAnimation'));
 // const PageScrollNavbarHide = lazy(() => import('../components/pageScrollNavbarHide'));
 // const CurvedSidebarMenu = lazy(() => import('../components/curvedSidebarMenu'));
 // const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
@@ -54,6 +54,12 @@ export const routes = [
         component: AnimationEffects,
         date: '29-May-24',
     },
+    {
+        title: 'Modal Opening Animation',
+        path: '/modal-opening-animation',
+        component: ModalOpeningAnimation,
+        date: '09-June-24',
+    },
     // {
     //     title: 'Mounting Animation',
     //     path: '/mounting-animation',
@@ -71,12 +77,6 @@ export const routes = [
     //     path: '/page-Scroll-Navbar-Hide',
     //     component: PageScrollNavbarHide,
     //     date: '05-June-24',
-    // },
-    // {
-    //     title: 'Modal Opening Animation',
-    //     path: '/modal-opening-animation',
-    //     component: ModalOpeningAnimation,
-    //     date: '06-June-24',
     // },
     // {
     //     title: 'Curved Sidebar Menu',
