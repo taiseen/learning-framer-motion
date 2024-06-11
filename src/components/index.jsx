@@ -12,7 +12,7 @@ const Home = () => {
             opacity: 0, scale: 0,
         },
         visible: {
-            opacity: 1, scale: 1, 
+            opacity: 1, scale: 1,
 
             transition: {
                 delayChildren: 0.2,
@@ -26,7 +26,7 @@ const Home = () => {
             opacity: 0, scale: 0.3,
         },
         visible: {
-            opacity: 1, scale: 1, 
+            opacity: 1, scale: 1,
 
             transition: {
                 type: 'spring',
@@ -41,11 +41,22 @@ const Home = () => {
     // transition={{ duration: .4, delay: .2 * idx }}
 
     return (
-        <div className={`h-screen p-4 bg-slate-300 overflow-y-auto`}>
+        <div className={`h-screen p-4 bg-gray-600 text-gray-300 overflow-y-auto`}>
 
             <h2 className="text-center text-2xl md:text-3xl my-4">
                 Navigate into mini-modular animation project
             </h2>
+
+            <p className="text-center">
+                <a
+                    className="text-sm duration-300 hover:text-emerald-400 hover:underline hover:underline-offset-4"
+                    href="https://react-mini-pro.netlify.app"
+                    rel="noreferrer"
+                    target="_blank"
+                >
+                    React mini-projects
+                </a>
+            </p>
 
             <motion.div
                 className="flex flex-wrap gap-4 items-center mt-8"
@@ -60,7 +71,7 @@ const Home = () => {
                         <motion.div
                             key={obj.path}
                             variants={childVariant}
-                            className="w-64 h-56 border border-slate-700 rounded flex-grow duration-300 hover:bg-slate-400/50"
+                            className="w-72 h-48 border border-slate-400 rounded flex-grow duration-300 hover:bg-slate-400/50"
                         >
                             <Link
                                 to={obj.path}
