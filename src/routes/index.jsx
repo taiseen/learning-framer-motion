@@ -3,6 +3,7 @@ import { lazy } from "react";
 
 const ModalOpeningAnimation = lazy(() => import('../components/modalOpeningAnimation'));
 const StaggeredAnimation = lazy(() => import('../components/staggeredAnimation'));
+const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
 const AnimationEffects = lazy(() => import('../components/animationEffects'));
 const TextAnimation = lazy(() => import('../components/textAnimation'));
 const AuroraEffect = lazy(() => import('../components/auroraEffect'));
@@ -12,7 +13,6 @@ const PopUpEffect = lazy(() => import('../components/popUp'));
 
 // const PageScrollNavbarHide = lazy(() => import('../components/pageScrollNavbarHide'));
 // const CurvedSidebarMenu = lazy(() => import('../components/curvedSidebarMenu'));
-// const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
 // const MultilevelMenu = lazy(() => import('../components/multilevelMenu'));
 // const TabListContainer = lazy(() => import('../components/tabHover'));
 
@@ -60,12 +60,12 @@ export const routes = [
         component: ModalOpeningAnimation,
         date: '09-June-24',
     },
-    // {
-    //     title: 'Mounting Animation',
-    //     path: '/mounting-animation',
-    //     component: MountingAnimation,
-    //     date: '03-June-24',
-    // },
+    {
+        title: 'Mounting Animation',
+        path: '/mounting-animation',
+        component: MountingAnimation,
+        date: '16-June-24',
+    },
     // {
     //     title: 'Tab Hover Animation',
     //     path: '/tab-hover-effect',
