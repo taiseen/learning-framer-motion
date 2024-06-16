@@ -44,7 +44,7 @@ const Home = () => {
         <div className={`h-screen p-4 bg-gray-600 text-gray-300 overflow-y-auto`}>
 
             <h2 className="text-center text-2xl md:text-3xl my-4">
-                Navigate into mini-modular animation project
+                Framer-motion mini-projects... || Total: {routes.length}
             </h2>
 
             <p className="text-center">
@@ -71,8 +71,10 @@ const Home = () => {
                         <motion.div
                             key={obj.path}
                             variants={childVariant}
-                            className="w-72 h-48 border border-slate-400 rounded flex-grow duration-300 hover:bg-slate-400/50"
+                            className="relative w-80 h-56 border border-slate-400 rounded flex-grow duration-300 hover:bg-slate-400/50"
                         >
+                            <span className="absolute top-1 left-2 text-gray-400/50">{obj.date}</span>
+
                             <Link
                                 to={obj.path}
                                 className="w-full h-full text-xl md:text-2xl flex justify-center items-center"
@@ -80,7 +82,7 @@ const Home = () => {
                                 {obj.title}
                             </Link>
                         </motion.div>
-                    )
+                    ).reverse()
                 }
             </motion.div>
         </div>

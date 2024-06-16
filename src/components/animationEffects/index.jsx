@@ -6,7 +6,6 @@ import Progressbar from "./scroll/Progressbar";
 import DummyContent from "./DummyContent";
 import Banner from "./scroll/Banner";
 import PopupMenu from "./PopupMenu";
-import BackBtn from "../BackBtn";
 import NavBar from "./NavBar";
 import React from "react";
 
@@ -18,8 +17,6 @@ const AnimationEffects = () => {
 
     return (
         <div className="p-2 mb-10">
-
-            <BackBtn />
 
             <Progressbar />
 

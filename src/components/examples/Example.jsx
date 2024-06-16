@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
-import BackBtn from "../BackBtn";
 
 const Example = () => (
 
     <div className="w-full h-screen flex items-center justify-center">
-        <BackBtn />
 
         <motion.div
             className="w-48 h-48 bg-green-600"
@@ -21,6 +19,7 @@ const Example = () => (
                 repeatDelay: 1
             }}
         />
+        
     </div>
 )
 

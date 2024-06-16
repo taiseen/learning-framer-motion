@@ -37,16 +37,16 @@ export const routes = [
         date: '24-May-24',
     },
     {
-        title: 'PopUp',
-        path: '/popUp',
-        component: PopUpEffect,
-        date: '27-May-24',
-    },
-    {
         title: 'Text Animation',
         path: '/text-animation',
         component: TextAnimation,
         date: '26-May-24',
+    },
+    {
+        title: 'PopUp',
+        path: '/popUp',
+        component: PopUpEffect,
+        date: '28-May-24',
     },
     {
         title: 'Animation Effects',
@@ -67,27 +67,27 @@ export const routes = [
         date: '16-June-24',
     },
     // {
-    //     title: 'Tab Hover Animation',
-    //     path: '/tab-hover-effect',
-    //     component: TabListContainer,
-    //     date: '04-June-24',
-    // },
-    // {
     //     title: 'Page Scroll - Navbar Hide',
     //     path: '/page-Scroll-Navbar-Hide',
     //     component: PageScrollNavbarHide,
-    //     date: '05-June-24',
+    //     date: '18-June-24',
+    // },
+    // {
+    //     title: 'Tab Hover Animation',
+    //     path: '/tab-hover-effect',
+    //     component: TabListContainer,
+    //     date: '19-June-24',
     // },
     // {
     //     title: 'Curved Sidebar Menu',
     //     path: '/curved-sidebar-menu',
     //     component: CurvedSidebarMenu,
-    //     date: '06-June-24',
+    //     date: '21-June-24',
     // },
     // {
     //     title: 'Multilevel Menu by JSON',
     //     path: '/multilevelMenu',
     //     component: MultilevelMenu,
-    //     date: '06-June-24',
+    //     date: '22-June-24',
     // },    
 ]

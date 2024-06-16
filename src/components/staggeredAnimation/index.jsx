@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import BackBtn from "../BackBtn";
 
 const articles = [
     { id: 1, title: "Html", disc: "Structure of website" },
@@ -13,7 +12,6 @@ const articles = [
 const StaggeredAnimation = () => {
     return (
         <div className='m-8 py-1 flex flex-wrap justify-evenly rounded bg-slate-300'>
-            <BackBtn />
 
             {
                 articles.map((article, idx) => (

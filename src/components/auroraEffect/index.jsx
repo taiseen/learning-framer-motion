@@ -2,7 +2,7 @@ import { motion, animate, useMotionTemplate, useMotionValue } from "framer-motio
 import { Suspense, lazy, useEffect } from "react";
 
 import SuspenseLoading from "../../helper/SuspenseLoading";
-import BackBtn from "../BackBtn";
+
 
 const ThreeJsCanvas = lazy(() => import('./ThreeJsCanvas'));
 const Content = lazy(() => import('./Content'));
@@ -34,7 +34,6 @@ const AuroraEffect = () => {
 
     return (
         <Suspense fallback={SuspenseLoading}>
-            <BackBtn />
 
             <motion.section
                 style={{ backgroundImage }}

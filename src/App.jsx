@@ -4,6 +4,7 @@ import { Suspense } from "react";
 
 import SuspenseLoading from "./helper/SuspenseLoading";
 import Home from "./components";
+import Layout from "./layout";
 
 const App = () => {
   return (
@@ -12,19 +13,25 @@ const App = () => {
       {/* <Home /> */}
 
       <Suspense fallback={<SuspenseLoading />}>
-        
         <Routes>
-          <Route path='/' element={<Home />} />
 
-          {
-            routes.map(obj =>
-              <Route key={obj.path} path={obj.path} element={<obj.component />} />
-            )
-          }
+          <Route path='/' element={<Layout />}>
+
+            <Route index element={<Home />} />
+
+            {
+              routes.map(obj =>
+                <Route
+                  key={obj.path}
+                  path={obj.path}
+                  element={<obj.component />}
+                />
+              )
+            }
+          </Route>
+
         </Routes>
-
       </Suspense>
-
     </BrowserRouter>
   )
 }
