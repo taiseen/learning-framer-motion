@@ -2,6 +2,7 @@ import { lazy } from "react";
 
 
 const ModalOpeningAnimation = lazy(() => import('../components/modalOpeningAnimation'));
+const PageScrollNavbarHide = lazy(() => import('../components/pageScrollNavbarHide'));
 const StaggeredAnimation = lazy(() => import('../components/staggeredAnimation'));
 const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
 const AnimationEffects = lazy(() => import('../components/animationEffects'));
@@ -11,7 +12,6 @@ const Example = lazy(() => import('../components/examples/Example'));
 const PopUpEffect = lazy(() => import('../components/popUp'));
 
 
-// const PageScrollNavbarHide = lazy(() => import('../components/pageScrollNavbarHide'));
 // const CurvedSidebarMenu = lazy(() => import('../components/curvedSidebarMenu'));
 // const MultilevelMenu = lazy(() => import('../components/multilevelMenu'));
 // const TabListContainer = lazy(() => import('../components/tabHover'));
@@ -66,12 +66,12 @@ export const routes = [
         component: MountingAnimation,
         date: '16-June-24',
     },
-    // {
-    //     title: 'Page Scroll - Navbar Hide',
-    //     path: '/page-Scroll-Navbar-Hide',
-    //     component: PageScrollNavbarHide,
-    //     date: '18-June-24',
-    // },
+    {
+        title: 'Page Scroll - Navbar Hide',
+        path: '/page-Scroll-Navbar-Hide',
+        component: PageScrollNavbarHide,
+        date: '18-June-24',
+    },
     // {
     //     title: 'Tab Hover Animation',
     //     path: '/tab-hover-effect',
