@@ -7,6 +7,7 @@ const StaggeredAnimation = lazy(() => import('../components/staggeredAnimation')
 const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
 const AnimationEffects = lazy(() => import('../components/animationEffects'));
 const TextAnimation = lazy(() => import('../components/textAnimation'));
+const TabListContainer = lazy(() => import('../components/tabHover'));
 const AuroraEffect = lazy(() => import('../components/auroraEffect'));
 const Example = lazy(() => import('../components/examples/Example'));
 const PopUpEffect = lazy(() => import('../components/popUp'));
@@ -14,7 +15,6 @@ const PopUpEffect = lazy(() => import('../components/popUp'));
 
 // const CurvedSidebarMenu = lazy(() => import('../components/curvedSidebarMenu'));
 // const MultilevelMenu = lazy(() => import('../components/multilevelMenu'));
-// const TabListContainer = lazy(() => import('../components/tabHover'));
 
 
 export const routes = [
@@ -72,12 +72,12 @@ export const routes = [
         component: PageScrollNavbarHide,
         date: '18-June-24',
     },
-    // {
-    //     title: 'Tab Hover Animation',
-    //     path: '/tab-hover-effect',
-    //     component: TabListContainer,
-    //     date: '19-June-24',
-    // },
+    {
+        title: 'Tab Hover Animation',
+        path: '/tab-hover-effect',
+        component: TabListContainer,
+        date: '19-June-24',
+    },
     // {
     //     title: 'Curved Sidebar Menu',
     //     path: '/curved-sidebar-menu',
