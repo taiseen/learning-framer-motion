@@ -3,14 +3,12 @@ import { routes } from "./routes";
 import { Suspense } from "react";
 
 import SuspenseLoading from "./helper/SuspenseLoading";
-import Home from "./components";
 import Layout from "./layout";
+import Home from "./home";
 
 const App = () => {
   return (
     <BrowserRouter>
-
-      {/* <Home /> */}
 
       <Suspense fallback={<SuspenseLoading />}>
         <Routes>

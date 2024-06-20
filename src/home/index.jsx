@@ -40,11 +40,27 @@ const Home = () => {
     // animate={{ opacity: 1, translateX: 0, translateY: 0 }}
     // transition={{ duration: .4, delay: .2 * idx }}
 
-    return (
-        <div className={`h-screen p-4 bg-gray-600 text-gray-300 overflow-y-auto`}>
+    const monthColors = {
+        'January': 'bg-[#4DB6AC]',
+        'February': 'bg-[#64B5F6]',
+        'March': 'bg-[#A5D6A7]',
+        'April': 'bg-[#81D4FA]',
+        'May': 'bg-[#9FA8DA]',
+        'June': 'bg-[#F0AAAA]',
+        'July': 'bg-[#4DB6AC]',
+        'August': 'bg-[#64B5F6]',
+        'September': 'bg-[#A5D6A7]',
+        'October': 'bg-[#81D4FA]',
+        'November': 'bg-[#9FA8DA]',
+        'December': 'bg-[#F0AAAA]',
+        'Missing': 'bg-red-500', // if date is missing...
+    };
 
-            <h2 className="text-center text-2xl md:text-3xl my-4">
-                Framer-motion mini-projects... || Total: {routes.length}
+    return (
+        <div className={`h-screen p-4 bg-gray-500 overflow-y-auto text-white`}>
+
+            <h2 className="text-center text-2xl md:text-4xl my-4">
+                Framer-motion mini-projects... | Total: {routes.length}
             </h2>
 
             <p className="text-center">
@@ -67,22 +83,31 @@ const Home = () => {
                 viewport={{ once: true, amount: .2 }}
             >
                 {
-                    routes.map(obj =>
-                        <motion.div
-                            key={obj.path}
-                            variants={childVariant}
-                            className="relative w-80 h-56 border border-slate-400 rounded flex-grow duration-300 hover:bg-slate-400/50"
-                        >
-                            <span className="absolute top-1 left-2 text-gray-400/50">{obj.date}</span>
+                    routes.map(obj => {
 
-                            <Link
-                                to={obj.path}
-                                className="w-full h-full text-xl md:text-2xl flex justify-center items-center"
+                        const { path, title, date } = obj;
+
+                        const bgColorClass = monthColors[date?.split('-')[1] || 'Missing'];
+
+                        return (
+                            <motion.div
+                                key={path}
+                                variants={childVariant}
+                                className={`relative w-80 h-56 border-2 border-slate-700 rounded-md flex-grow duration-300 ${bgColorClass} hover:border-red-700 group`}
                             >
-                                {obj.title}
-                            </Link>
-                        </motion.div>
-                    ).reverse()
+                                <p className="absolute top-0 left-1.5 text-gray-500 font-semibold duration-300 group-hover:text-red-700">
+                                    {date || 'N/A'}
+                                </p>
+
+                                <Link
+                                    to={path}
+                                    className="w-full h-full text-xl md:text-2xl flex justify-center items-center text-black group-hover:text-red-700 duration-300 "
+                                >
+                                    {title}
+                                </Link>
+                            </motion.div>
+                        )
+                    }).reverse()
                 }
             </motion.div>
         </div>
