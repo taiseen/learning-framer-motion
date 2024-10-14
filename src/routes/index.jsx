@@ -1,11 +1,11 @@
 import { lazy } from "react";
 
-
 const ModalOpeningAnimation = lazy(() => import('../components/modalOpeningAnimation'));
 const PageScrollNavbarHide = lazy(() => import('../components/pageScrollNavbarHide'));
 const StaggeredAnimation = lazy(() => import('../components/staggeredAnimation'));
 const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
 const AnimationEffects = lazy(() => import('../components/animationEffects'));
+const BoxOpenDropDown = lazy(() => import('../components/boxOpenDropDown'));
 const TextAnimation = lazy(() => import('../components/textAnimation'));
 const TabListContainer = lazy(() => import('../components/tabHover'));
 const AuroraEffect = lazy(() => import('../components/auroraEffect'));
@@ -77,6 +77,12 @@ export const routes = [
         path: '/tab-hover-effect',
         component: TabListContainer,
         date: '19-June-24',
+    },
+    {
+        title: 'Box Open DropDown',
+        path: '/box-open-dropdown',
+        component: BoxOpenDropDown,
+        date: '23-September-24',
     },
     // {
     //     title: 'Curved Sidebar Menu',
