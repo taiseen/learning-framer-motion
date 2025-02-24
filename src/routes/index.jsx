@@ -1,11 +1,14 @@
 import { lazy } from "react";
 
+import pageTransitionsRoutes from "../components/pageTransitions/routes";
+
 const ModalOpeningAnimation = lazy(() => import('../components/modalOpeningAnimation'));
 const PageScrollNavbarHide = lazy(() => import('../components/pageScrollNavbarHide'));
 const StaggeredAnimation = lazy(() => import('../components/staggeredAnimation'));
 const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
 const AnimationEffects = lazy(() => import('../components/animationEffects'));
 const BoxOpenDropDown = lazy(() => import('../components/boxOpenDropDown'));
+const PageTransitions = lazy(() => import('../components/pageTransitions'));
 const TextAnimation = lazy(() => import('../components/textAnimation'));
 const TabListContainer = lazy(() => import('../components/tabHover'));
 const AuroraEffect = lazy(() => import('../components/auroraEffect'));
@@ -83,6 +86,14 @@ export const routes = [
         path: '/box-open-dropdown',
         component: BoxOpenDropDown,
         date: '23-September-24',
+    },
+    {
+        title: 'Page Transitions',
+        path: '/page-transitions',
+        component: PageTransitions,
+        date: '24-February-25',
+        isChildren: true,
+        childRoutes: pageTransitionsRoutes,
     },
     // {
     //     title: 'Curved Sidebar Menu',

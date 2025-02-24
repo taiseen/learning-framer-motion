@@ -18,13 +18,45 @@ const App = () => {
             <Route index element={<Home />} />
 
             {
-              routes.map(obj =>
-                <Route
-                  key={obj.path}
-                  path={obj.path}
-                  element={<obj.component />}
-                />
-              )
+              // single || linear way of navigation...
+              // routes.map(obj =>
+              //   <Route
+              //     key={obj.path}
+              //     path={obj.path}
+              //     element={<obj.component />}
+              //   />
+              // )
+            }
+
+            {
+              routes.map(routeObj => {
+
+                return routeObj.isChildren
+                  ? (
+                    <Route
+                      key={routeObj.path}
+                      path={routeObj.path}
+                      element={<routeObj.component />}
+                    >
+                      {
+                        routeObj.childRoutes.map(childObj => (
+                          <Route
+                            key={childObj.path}
+                            path={childObj.path}
+                            element={<childObj.component />}
+                          />
+                        ))
+                      }
+                    </Route>
+                  )
+                  : (
+                    <Route
+                      key={routeObj.path}
+                      path={routeObj.path}
+                      element={<routeObj.component />}
+                    />
+                  )
+              })
             }
           </Route>
 
