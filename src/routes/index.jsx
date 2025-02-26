@@ -9,6 +9,7 @@ const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
 const AnimationEffects = lazy(() => import('../components/animationEffects'));
 const BoxOpenDropDown = lazy(() => import('../components/boxOpenDropDown'));
 const PageTransitions = lazy(() => import('../components/pageTransitions'));
+const ExpandableCard = lazy(() => import('../components/expandableCard'));
 const TextAnimation = lazy(() => import('../components/textAnimation'));
 const TabListContainer = lazy(() => import('../components/tabHover'));
 const AuroraEffect = lazy(() => import('../components/auroraEffect'));
@@ -94,6 +95,12 @@ export const routes = [
         date: '24-February-25',
         isChildren: true,
         childRoutes: pageTransitionsRoutes,
+    },
+    {
+        title: 'Expandable Card',
+        path: '/expandable-card',
+        component: ExpandableCard,
+        date: '25-February-25',
     },
     // {
     //     title: 'Curved Sidebar Menu',
