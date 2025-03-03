@@ -2,7 +2,9 @@ import { lazy } from "react";
 
 import pageTransitionsRoutes from "../components/pageTransitions/routes";
 
+
 const ModalOpeningAnimation = lazy(() => import('../components/modalOpeningAnimation'));
+const AnimationPlaceholder = lazy(() => import('../components/animationPlaceholder'));
 const PageScrollNavbarHide = lazy(() => import('../components/pageScrollNavbarHide'));
 const StaggeredAnimation = lazy(() => import('../components/staggeredAnimation'));
 const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
@@ -109,7 +111,12 @@ export const routes = [
         component: AnimatedNavbar,
         date: '01-March-25',
     },
-
+    {
+        title: 'Animation Placeholder',
+        path: '/animated-placeholder',
+        component: AnimationPlaceholder,
+        date: '03-March-25',
+    },
     // {
     //     title: 'Curved Sidebar Menu',
     //     path: '/curved-sidebar-menu',
