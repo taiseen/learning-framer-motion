@@ -17,7 +17,7 @@ const AnimationPlaceholder = () => {
 
                 <textarea
                     autoFocus
-                    className="w-[560px] min-h-48 max-h-96 p-2.5 rounded-md bg-slate-700 text-white  caret-slate-400 outline-none"
+                    className="w-[560px] min-h-48 max-h-96 p-2.5 rounded-md bg-slate-700 text-white  caret-slate-400 outline-hidden"
                     {...register(userInput, {
                         required: "Input Required",
                         maxLength: {

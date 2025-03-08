@@ -40,14 +40,14 @@ const Box = ({ obj }) => {
             variants={gridVariants}
             onHoverEnd={() => setIsHover(false)}
             onHoverStart={() => setIsHover(true)}
-            className="relative cursor-pointer h-96 overflow-hidden rounded border border-slate-600/20 shadow-xl"
+            className="relative cursor-pointer h-96 overflow-hidden rounded-sm border border-slate-600/20 shadow-xl"
         >
 
             {/* 🟩🟩🟩 local || small size of images animated faster... 🟩🟩🟩 */}
             <img src={imgUrl} alt={obj.title} className="object-cover" />
 
             <div
-                className="w-[calc(100%-1rem)] h-[calc(100%-1rem)] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded flex flex-col justify-between"
+                className="w-[calc(100%-1rem)] h-[calc(100%-1rem)] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-sm flex flex-col justify-between"
             >
 
                 <motion.div

@@ -26,7 +26,7 @@ const DemoEmptyBoxHolder = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: .2 }}
-            className="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-4 my-8 p-2 border border-slate-600/40 rounded"
+            className="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-4 my-8 p-2 border border-slate-600/40 rounded-sm"
         >
             {
                 data.slice(4).map(obj => <Box key={obj.id} obj={obj} />)

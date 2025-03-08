@@ -5,7 +5,7 @@ const Button = ({ text, handleToggle }) => {
     return (
         <motion.button
             onClick={handleToggle}
-            className="my-4 px-3 py-2 rounded bg-fuchsia-600 text-white text-[clamp(1.5rem,3vm,3.5rme)]"
+            className="my-4 px-3 py-2 rounded-sm bg-fuchsia-600 text-white text-[clamp(1.5rem,3vm,3.5rme)]"
             whileHover={{ scale: 1.1 }}
             transition={{
                 duration: .2,

@@ -33,14 +33,14 @@ const PopupMenu = ({ isPopupMenuOpen, handleToggle }) => {
             initial="hidden"
             variants={menuVariants}
             animate={isPopupMenuOpen ? "visible" : "hidden"}
-            className='fixed top-2 right-2 w-96 h-32 z-30 shadow-xl rounded bg-green-600 p-2'
+            className='fixed top-2 right-2 w-96 h-32 z-30 shadow-xl rounded-sm bg-green-600 p-2'
         >
 
             <p className="text-xl">Hello</p>
 
             <motion.button
                 onClick={handleToggle}
-                className="absolute top-1 right-1 px-2 py-1 bg-red-100 rounded"
+                className="absolute top-1 right-1 px-2 py-1 bg-red-100 rounded-sm"
                 whileHover={{ scale: 1.1 }}
                 transition={{
                     duration: .2,

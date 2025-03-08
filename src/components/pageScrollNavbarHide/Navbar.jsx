@@ -31,7 +31,7 @@ const Navbar = () => {
 
             className="sticky top-0 p-4 flex items-center justify-between gap-2 cursor-pointer w-full bg-slate-800"
         >
-            <div className="w-10 h-10 bg-gray-500 rounded" />
+            <div className="w-10 h-10 bg-gray-500 rounded-sm" />
 
             <ul className="flex items-center gap-6 text-xl">
                 <li>Home</li>
@@ -39,7 +39,7 @@ const Navbar = () => {
                 <li>Blog</li>
             </ul>
 
-            <div className="px-4 py-2 rounded bg-emerald-300 text-black">
+            <div className="px-4 py-2 rounded-sm bg-emerald-300 text-black">
                 Try Free
             </div>
         </motion.nav>

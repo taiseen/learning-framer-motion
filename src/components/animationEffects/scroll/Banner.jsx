@@ -32,7 +32,7 @@ const Banner = ({ handleToggle }) => {
             after:left-0 
             after:w-full 
             after:h-2 
-            after:rounded
+            after:rounded-sm
             after:bg-[linear-gradient(to_right,#FF11FF,#6366f1)] 
             `}
         >

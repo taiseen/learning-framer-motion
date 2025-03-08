@@ -65,7 +65,7 @@ const ExpandableCard = () => {
 
                             <div className="flex items-center justify-end">
                                 <button
-                                    className="text-white font-semibold py-2 px-8 rounded-md bg-gradient-to-r from-blue-600 to-blue-800 cursor-pointer shadow-lg drop-shadow-lg"
+                                    className="text-white font-semibold py-2 px-8 rounded-md bg-linear-to-r from-blue-600 to-blue-800 cursor-pointer shadow-lg drop-shadow-lg"
                                     onClick={() => setIsExpand(false)}
                                 >
                                     Close

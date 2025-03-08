@@ -25,7 +25,7 @@ const ModalOpeningAnimation = () => {
 
             <button
                 onClick={() => setIsModalOpen(true)}
-                className="ml-10 mt-10 px-4 py-2 rounded outline-none text-2xl bg-fuchsia-400 font-bold duration-300 hover:bg-fuchsia-500"
+                className="ml-10 mt-10 px-4 py-2 rounded-sm outline-hidden text-2xl bg-fuchsia-400 font-bold duration-300 hover:bg-fuchsia-500"
             >
                 Open Modal
             </button>

@@ -11,13 +11,13 @@ const articles = [
 
 const StaggeredAnimation = () => {
     return (
-        <div className='m-8 py-1 flex flex-wrap justify-evenly rounded bg-slate-300'>
+        <div className='m-8 py-1 flex flex-wrap justify-evenly rounded-sm bg-slate-300'>
 
             {
                 articles.map((article, idx) => (
                     <motion.div
                         key={article.id}
-                        className='w-52 h-52 m-2 p-2 rounded bg-[#a2a] text-white flex flex-col items-center justify-center text-center'
+                        className='w-52 h-52 m-2 p-2 rounded-sm bg-[#a2a] text-white flex flex-col items-center justify-center text-center'
                         initial={{ opacity: 0, translateX: -200, translateY: -200 }}
                         animate={{ opacity: 1, translateX: 0, translateY: 0 }}
                         transition={{ duration: .4, delay: .2 * idx }}

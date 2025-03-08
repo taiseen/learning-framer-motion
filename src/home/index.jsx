@@ -93,7 +93,7 @@ const Home = () => {
                             <motion.div
                                 key={path}
                                 variants={childVariant}
-                                className={`relative w-80 h-56 border-2 border-slate-700 rounded-md flex-grow duration-300 ${bgColorClass} hover:border-red-700 group`}
+                                className={`relative w-80 h-56 border-2 border-slate-700 rounded-md grow duration-300 ${bgColorClass} hover:border-red-700 group`}
                             >
                                 <p className="absolute top-0 left-1.5 text-gray-500 font-semibold duration-300 group-hover:text-red-700">
                                     {date || 'N/A'}

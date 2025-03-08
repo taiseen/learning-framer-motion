@@ -53,7 +53,7 @@ const GridBoxContainer = () => {
                         variants={childVariant}
                     >
 
-                        <div className="max-h-full h-full bg-slate-500 rounded flex items-center justify-center">
+                        <div className="max-h-full h-full bg-slate-500 rounded-sm flex items-center justify-center">
                             <span className="text-2xl">{obj.title}</span>
                         </div>
 

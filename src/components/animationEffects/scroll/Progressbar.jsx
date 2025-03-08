@@ -12,7 +12,7 @@ function Progressbar() {
 
     return (
         <motion.div
-            className="fixed top-0 left-0 right-0 w-full h-1 rounded origin-[0%] z-10 bg-green-500"
+            className="fixed top-0 left-0 right-0 w-full h-1 rounded-sm origin-[0%] z-10 bg-green-500"
             style={{ scaleX }}
         ></motion.div>
     );

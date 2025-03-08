@@ -37,7 +37,7 @@ const Placeholder = ({ chatInput, setFocus, watch }) => {
                 onClick={handleFocus}
                 key={sampleInputIndex}
                 data-feedback={userChatInput ? "true" : "false"}
-                className="absolute top-2.5 left-3 w-[96%] text-slate-400 [&[data-feedback=true]]:hidden"
+                className="absolute top-2.5 left-3 w-[96%] text-slate-400 data-[feedback=true]:hidden"
             >
                 {samplePlaceholders[sampleInputIndex]}
             </motion.span>

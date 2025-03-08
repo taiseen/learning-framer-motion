@@ -34,7 +34,7 @@ const BoxContainer = () => {
             initial="hidden"
             animate="visible"
             variants={gridVariants}
-            className="grid grid-cols-[repeat(auto-fill,minmax(500px,1fr))] gap-4 my-8 p-2 border border-slate-600/40 rounded"
+            className="grid grid-cols-[repeat(auto-fill,minmax(500px,1fr))] gap-4 my-8 p-2 border border-slate-600/40 rounded-sm"
         >
             {
                 data.map(obj => <Box key={obj.id} obj={obj} />)
