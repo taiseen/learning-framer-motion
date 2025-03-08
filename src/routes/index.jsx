@@ -118,6 +118,12 @@ export const routes = [
         date: '03-March-25',
     },
     // {
+    //     title: 'Chat App',
+    //     path: '/chat-app',
+    //     component: ChatApp,
+    //     date: '09-March-25',
+    // },
+    // {
     //     title: 'Curved Sidebar Menu',
     //     path: '/curved-sidebar-menu',
     //     component: CurvedSidebarMenu,
