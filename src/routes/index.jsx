@@ -2,7 +2,6 @@ import { lazy } from "react";
 
 import pageTransitionsRoutes from "../components/pageTransitions/routes";
 
-
 const ModalOpeningAnimation = lazy(() => import('../components/modalOpeningAnimation'));
 const AnimationPlaceholder = lazy(() => import('../components/animationPlaceholder'));
 const PageScrollNavbarHide = lazy(() => import('../components/pageScrollNavbarHide'));
@@ -18,6 +17,7 @@ const TabListContainer = lazy(() => import('../components/tabHover'));
 const AuroraEffect = lazy(() => import('../components/auroraEffect'));
 const Example = lazy(() => import('../components/examples/Example'));
 const PopUpEffect = lazy(() => import('../components/popUp'));
+const ChatApp = lazy(() => import('../components/chat'));
 
 
 // const CurvedSidebarMenu = lazy(() => import('../components/curvedSidebarMenu'));
@@ -117,12 +117,12 @@ export const routes = [
         component: AnimationPlaceholder,
         date: '03-March-25',
     },
-    // {
-    //     title: 'Chat App',
-    //     path: '/chat-app',
-    //     component: ChatApp,
-    //     date: '09-March-25',
-    // },
+    {
+        title: 'Chat App',
+        path: '/chat-app',
+        component: ChatApp,
+        date: '10-March-25',
+    },
     // {
     //     title: 'Curved Sidebar Menu',
     //     path: '/curved-sidebar-menu',
