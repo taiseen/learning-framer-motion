@@ -12,6 +12,7 @@ const BoxOpenDropDown = lazy(() => import('../components/boxOpenDropDown'));
 const PageTransitions = lazy(() => import('../components/pageTransitions'));
 const ExpandableCard = lazy(() => import('../components/expandableCard'));
 const AnimatedNavbar = lazy(() => import('../components/animatedNavbar'));
+const ToggleBtnContainer = lazy(() => import('../components/toggleBtn'));
 const TextAnimation = lazy(() => import('../components/textAnimation'));
 const TabListContainer = lazy(() => import('../components/tabHover'));
 const AuroraEffect = lazy(() => import('../components/auroraEffect'));
@@ -123,6 +124,13 @@ export const routes = [
         component: ChatApp,
         date: '10-March-25',
     },
+    {
+        title: 'Toggle Btn',
+        path: '/toggle-btn',
+        component: ToggleBtnContainer,
+        date: '11-March-25',
+    },
+    
     // {
     //     title: 'Curved Sidebar Menu',
     //     path: '/curved-sidebar-menu',
