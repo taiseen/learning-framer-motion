@@ -2,6 +2,7 @@ import { lazy } from "react";
 
 import pageTransitionsRoutes from "../components/pageTransitions/routes";
 
+
 const ModalOpeningAnimation = lazy(() => import('../components/modalOpeningAnimation'));
 const AnimationPlaceholder = lazy(() => import('../components/animationPlaceholder'));
 const PageScrollNavbarHide = lazy(() => import('../components/pageScrollNavbarHide'));
@@ -12,6 +13,7 @@ const BoxOpenDropDown = lazy(() => import('../components/boxOpenDropDown'));
 const PageTransitions = lazy(() => import('../components/pageTransitions'));
 const ExpandableCard = lazy(() => import('../components/expandableCard'));
 const AnimatedNavbar = lazy(() => import('../components/animatedNavbar'));
+const AnimatedBorder = lazy(() => import('../components/animatedBorder'));
 const ToggleBtnContainer = lazy(() => import('../components/toggleBtn'));
 const TextAnimation = lazy(() => import('../components/textAnimation'));
 const TabListContainer = lazy(() => import('../components/tabHover'));
@@ -130,7 +132,12 @@ export const routes = [
         component: ToggleBtnContainer,
         date: '11-March-25',
     },
-    
+    {
+        title: 'Animated Border',
+        path: '/animated-border',
+        component: AnimatedBorder,
+        date: '12-March-25',
+    },
     // {
     //     title: 'Curved Sidebar Menu',
     //     path: '/curved-sidebar-menu',
