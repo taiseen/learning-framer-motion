@@ -16,6 +16,8 @@ const AnimatedBorder = () => {
     const pulse = useSpring(0, { damping: 0, mass: 5, stiffness: 10 });
     const pulsingBg = useTransform(pulse, (r) => `blur(${r}px)`);
 
+    const background = "conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545)";
+
     useEffect(() => pulse.set(10), []);
 
 
@@ -41,18 +43,15 @@ const AnimatedBorder = () => {
                 <button className="relative z-10 bg-neutral-700 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors duration-200 cursor-pointer">
                     Subscribe to Built With Code
                 </button>
+                
                 <div
                     className="absolute -inset-[1px] rounded-md"
-                    style={{
-                        background: "conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545)",
-                    }}
+                    style={{ background }}
                 />
+
                 <motion.div
                     className="absolute -inset-[1px] rounded-md opacity-50"
-                    style={{
-                        background: "conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545)",
-                        filter: pulsingBg,
-                    }}
+                    style={{ background, filter: pulsingBg, }}
                 />
             </div>
 
