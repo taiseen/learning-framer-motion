@@ -20,6 +20,7 @@ const TabListContainer = lazy(() => import('../components/tabHover'));
 const AuroraEffect = lazy(() => import('../components/auroraEffect'));
 const AnimatedList = lazy(() => import('../components/animatedList'));
 const Example = lazy(() => import('../components/examples/Example'));
+const SimpleList = lazy(() => import('../components/simpleList'));
 const PopUpEffect = lazy(() => import('../components/popUp'));
 const ChatApp = lazy(() => import('../components/chat'));
 
@@ -150,6 +151,13 @@ export const routes = [
         component: AnimatedList,
         date: '20-March-25',
     },
+    {
+        title: 'Simple List',
+        path: '/simple-list',
+        component: SimpleList,
+        date: '21-March-25',
+    },
+
     // {
     //     title: 'Curved Sidebar Menu',
     //     path: '/curved-sidebar-menu',
