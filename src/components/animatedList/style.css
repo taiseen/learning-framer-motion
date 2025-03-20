@@ -1,0 +1,11 @@
+.listScroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.listScroll::-webkit-scrollbar-track {
+    background: rgb(234, 233, 233);
+}
+
+.listScroll::-webkit-scrollbar-thumb {
+    background: goldenrod;
+}

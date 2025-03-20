@@ -18,10 +18,10 @@ const ToggleBtnContainer = lazy(() => import('../components/toggleBtn'));
 const TextAnimation = lazy(() => import('../components/textAnimation'));
 const TabListContainer = lazy(() => import('../components/tabHover'));
 const AuroraEffect = lazy(() => import('../components/auroraEffect'));
+const AnimatedList = lazy(() => import('../components/animatedList'));
 const Example = lazy(() => import('../components/examples/Example'));
 const PopUpEffect = lazy(() => import('../components/popUp'));
 const ChatApp = lazy(() => import('../components/chat'));
-
 
 // const CurvedSidebarMenu = lazy(() => import('../components/curvedSidebarMenu'));
 // const MultilevelMenu = lazy(() => import('../components/multilevelMenu'));
@@ -143,6 +143,12 @@ export const routes = [
         path: '/date-calculator',
         component: DateCalculator,
         date: '18-March-25',
+    },
+    {
+        title: 'Animated List',
+        path: '/animated-list',
+        component: AnimatedList,
+        date: '20-March-25',
     },
     // {
     //     title: 'Curved Sidebar Menu',
