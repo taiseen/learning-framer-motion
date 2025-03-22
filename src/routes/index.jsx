@@ -10,6 +10,8 @@ const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
 const AnimationEffects = lazy(() => import('../components/animationEffects'));
 const BoxOpenDropDown = lazy(() => import('../components/boxOpenDropDown'));
 const PageTransitions = lazy(() => import('../components/pageTransitions'));
+const AnimatedList_v1 = lazy(() => import('../components/animatedList_v1'));
+const AnimatedList_v2 = lazy(() => import('../components/animatedList_v2'));
 const ExpandableCard = lazy(() => import('../components/expandableCard'));
 const AnimatedNavbar = lazy(() => import('../components/animatedNavbar'));
 const AnimatedBorder = lazy(() => import('../components/animatedBorder'));
@@ -18,9 +20,7 @@ const ToggleBtnContainer = lazy(() => import('../components/toggleBtn'));
 const TextAnimation = lazy(() => import('../components/textAnimation'));
 const TabListContainer = lazy(() => import('../components/tabHover'));
 const AuroraEffect = lazy(() => import('../components/auroraEffect'));
-const AnimatedList = lazy(() => import('../components/animatedList'));
 const Example = lazy(() => import('../components/examples/Example'));
-const SimpleList = lazy(() => import('../components/simpleList'));
 const PopUpEffect = lazy(() => import('../components/popUp'));
 const ChatApp = lazy(() => import('../components/chat'));
 
@@ -146,15 +146,15 @@ export const routes = [
         date: '18-March-25',
     },
     {
-        title: 'Animated List',
-        path: '/animated-list',
-        component: AnimatedList,
+        title: 'Animated List v1',
+        path: '/animated-list-v1',
+        component: AnimatedList_v1,
         date: '20-March-25',
     },
     {
-        title: 'Simple List',
-        path: '/simple-list',
-        component: SimpleList,
+        title: 'Animated List v2',
+        path: '/animated-list-v2',
+        component: AnimatedList_v2,
         date: '21-March-25',
     },
 
