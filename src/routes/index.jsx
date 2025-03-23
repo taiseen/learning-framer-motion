@@ -2,9 +2,11 @@ import { lazy } from "react";
 
 import pageTransitionsRoutes from "../components/pageTransitions/routes";
 
+
 const ModalOpeningAnimation = lazy(() => import('../components/modalOpeningAnimation'));
 const AnimationPlaceholder = lazy(() => import('../components/animationPlaceholder'));
 const PageScrollNavbarHide = lazy(() => import('../components/pageScrollNavbarHide'));
+const FigmaFloatingToolbar = lazy(() => import('../components/figmaFloatingToolbar'));
 const StaggeredAnimation = lazy(() => import('../components/staggeredAnimation'));
 const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
 const AnimationEffects = lazy(() => import('../components/animationEffects'));
@@ -156,6 +158,12 @@ export const routes = [
         path: '/animated-list-v2',
         component: AnimatedList_v2,
         date: '21-March-25',
+    },
+    {
+        title: 'Figma Floating Toolbar',
+        path: '/figma-floating-toolbar',
+        component: FigmaFloatingToolbar,
+        date: '23-March-25',
     },
 
     // {
