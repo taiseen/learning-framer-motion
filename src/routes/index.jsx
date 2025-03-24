@@ -6,7 +6,7 @@ import pageTransitionsRoutes from "../components/pageTransitions/routes";
 const ModalOpeningAnimation = lazy(() => import('../components/modalOpeningAnimation'));
 const AnimationPlaceholder = lazy(() => import('../components/animationPlaceholder'));
 const PageScrollNavbarHide = lazy(() => import('../components/pageScrollNavbarHide'));
-const FigmaFloatingToolbar = lazy(() => import('../components/figmaFloatingToolbar'));
+const DevFloatingToolbar = lazy(() => import('../components/devFloatingToolbar'));
 const StaggeredAnimation = lazy(() => import('../components/staggeredAnimation'));
 const MountingAnimation = lazy(() => import('../components/mountingAnimation'));
 const AnimationEffects = lazy(() => import('../components/animationEffects'));
@@ -160,12 +160,11 @@ export const routes = [
         date: '21-March-25',
     },
     {
-        title: 'Figma Floating Toolbar',
-        path: '/figma-floating-toolbar',
-        component: FigmaFloatingToolbar,
+        title: 'Dev Floating Toolbar',
+        path: '/dev-floating-toolbar',
+        component: DevFloatingToolbar,
         date: '23-March-25',
     },
-
     // {
     //     title: 'Curved Sidebar Menu',
     //     path: '/curved-sidebar-menu',
